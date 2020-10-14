@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: go-app-version
-        image: quay.io/alekssaul/go-app-version:v0.2
+        image: quay.io/alekssaul/go-app-version:v0.1
         ports:
         - containerPort: 8080
