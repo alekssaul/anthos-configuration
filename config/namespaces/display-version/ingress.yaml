@@ -14,11 +14,11 @@ spec:
       - path: /
         backend:
           serviceName: go-app-version
-          servicePort: 8080
+          servicePort: 80
   - host: go-app-version.aws.alekssaul.com
     http:
       paths:
       - path: /
         backend:
           serviceName: go-app-version
-          servicePort: 8080
+          servicePort: 80
