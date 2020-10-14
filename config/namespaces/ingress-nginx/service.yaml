@@ -11,9 +11,10 @@ metadata:
     app.kubernetes.io/component: controller
   name: ingress-nginx-controller
   namespace: ingress-nginx
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: nlb
 spec:
   type: LoadBalancer
-  externalTrafficPolicy: Local
   ports:
     - name: http
       port: 80
